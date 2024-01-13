@@ -3,11 +3,11 @@ import java.util.Comparator;
 import java.util.Date;
 
 public class Employee implements Comparator<Date> {
-    private String fio;
-    private String position;
-    private int phone;
-    private int salary;
-    private int age;
+    protected String fio;
+    protected String position;
+    protected int phone;
+    protected int salary;
+    protected int age;
 
     public Employee(String fio, String position, int phone, int salary, int age) {
         this.fio = fio;
@@ -25,12 +25,7 @@ public class Employee implements Comparator<Date> {
         this.age = age;
     }
 
-    /**
-     * Метод для повышения зарплаты сотрудникам, кроме должности менеджера
-     * @param employees список сотрудников
-     * @param age возраст от которого повышается ЗП
-     * @param increase сумма повышения
-     */
+
 
     public String getFio() {
         return fio;

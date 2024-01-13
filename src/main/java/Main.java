@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
 
@@ -20,6 +21,29 @@ public class Main {
 
         Manager.changeSalary(employees,39,1000000000);
         System.out.println(employees);
+
+
+        ArrayList <Student> students = new ArrayList<>();
+
+        List<Double> alexGrades = new ArrayList<>();
+        alexGrades.add(5.0);
+        alexGrades.add(4.0);
+        students.add(new Student("Alex",alexGrades,"nano"));
+
+        List<Double> katyaGrades = new ArrayList<>();
+        katyaGrades.add(5.0);
+        katyaGrades.add(2.0);
+        students.add(new Student("Katya",katyaGrades,"Информатика"));
+
+
+        List<Double> viktorGrades = new ArrayList<>();
+        viktorGrades.add(5.0);
+        viktorGrades.add(5.0);
+        students.add(new Student("Viktor",viktorGrades,"Информатика"));
+
+        ArrayList<Student> resultList = new ArrayList<>(Student.getAbgGrade(students)) ;
+        System.out.println(resultList.size());
+        System.out.println(resultList);
 
     }
 }
